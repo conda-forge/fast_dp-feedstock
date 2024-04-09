@@ -1,0 +1,20 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 0cc8785..906d715 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -15,7 +15,6 @@ classifiers = [
+     "Programming Language :: Python :: 3.11",
+     "Operating System :: POSIX :: Linux",
+ ]
+-dependencies = ["procrunner"]
+ 
+ [project.urls]
+ Homepage = "https://github.com/DiamondLightSource/fast_dp"
+diff --git a/requirements_dev.txt b/requirements_dev.txt
+index 1705f95..4220a11 100644
+--- a/requirements_dev.txt
++++ b/requirements_dev.txt
+@@ -1,3 +1,2 @@
+ pytest==7.4.2
+-procrunner==2.3.3
+ pytest-cov==4.1.0

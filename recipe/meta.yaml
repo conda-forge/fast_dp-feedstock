@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ade6bf3d398a80e169980e8ae608bf20e883c1094a2062665f3cc1dc273e99f5
+  patches:
+    - procrunner.diff
 
 build:
   noarch: python
