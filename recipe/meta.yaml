@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - fast_dp = fast_dp.fast_dp:main
     - fast_rdp = fast_dp.fast_rdp:main
