@@ -1,0 +1,12 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 0cc8785..906d715 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -15,7 +15,6 @@ classifiers = [
+     "Programming Language :: Python :: 3.11",
+     "Operating System :: POSIX :: Linux",
+ ]
+-dependencies = ["procrunner"]
+ 
+ [project.urls]
+ Homepage = "https://github.com/DiamondLightSource/fast_dp"
