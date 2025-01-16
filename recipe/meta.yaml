@@ -6,14 +6,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ade6bf3d398a80e169980e8ae608bf20e883c1094a2062665f3cc1dc273e99f5
   patches:
     - procrunner.diff
 
 build:
   noarch: python
-  number: 1
+  number: 2
   entry_points:
     - fast_dp = fast_dp.fast_dp:main
     - fast_rdp = fast_dp.fast_rdp:main
@@ -21,10 +21,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - dxtbx
 
 test:
@@ -34,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/DiamondLightSource/fast_dp
